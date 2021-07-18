@@ -3,7 +3,7 @@
 // Listing 12-1: Collecting the command line arguments into a vector and printing them
 use std::env;
 use std::process;
-use minigrep::Config;
+use jason_minigrep::Config; // crate resolves the path relative to the current crate
 
 // CASE_INSENSITIVE=1 cargo run ar poem.txt
 // cargo run ar poem.txt
@@ -31,7 +31,7 @@ fn main() {
     //     process::exit(1);
     // });
 
-    if let Err(e) = minigrep::run(config) {
+    if let Err(e) = jason_minigrep::run(config) {
         eprintln!("Application error: {}", e);
         process::exit(1);
     }
