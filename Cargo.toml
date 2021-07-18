@@ -1,6 +1,6 @@
 [package]
 name = "jason-minigrep"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["JasonLv lv-wei@foxmail.com"]
 edition = "2018"
 description = "一个用来检索文件内容的命令行工具."
